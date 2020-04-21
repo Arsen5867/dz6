@@ -32,7 +32,7 @@ body {
 }
 
  h4 {
-    margin-top: 9%;
+    padding-top: 100px;
     font-size: 24px;
     font-weight: 400;
     font-family: 'Kaushan Script',
@@ -230,7 +230,7 @@ background-size: 100% 100%;
 .AMAZING {
     max-width: 1200px;
     width: 90%;
-    margin: 0 auto;
+    margin: 2% auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -239,7 +239,7 @@ background-size: 100% 100%;
 .AMAZING .pz {
     display: flex;
     width: 30%;
-    padding: 11px;
+    padding: 25px 10px;
 }
 
 .pq {
@@ -287,9 +287,15 @@ background-size: 100% 100%;
    position:relative;
    bottom: -5px;
 }
+
+.nor{
+    height: 580px;
+}
+
 .noy {
+    height: 452px;
     top: 100px;
-    right: 175px;
+    right: 160px;
 }
 
 .container5:hover{
@@ -297,7 +303,7 @@ background-size: 100% 100%;
 }
 
 .container7 {
-    background-color: rgba(230, 223, 223, 0.849);
+    background-color: rgb(230, 223, 223);
 }
 
 .bloc {
@@ -385,22 +391,13 @@ background-size: 100% 100%;
     }
 }
 
-@media(max-width: 851px) {
-    
+@media(max-width: 840px) {
     .noy {
-        right: 232px;
+        height: 361px;
     }
-
-    .container5 img {
-        position: relative;
-        bottom: 0;
+    .nor {
+        height: 430px;
     }
-}
-
-@media(max-width: 848px) {
-.noy {
-    top: -161px;
-}
 }
 
 @media(max-width: 768px) {
@@ -410,10 +407,15 @@ background-size: 100% 100%;
     }
 }
 
-@media(max-width: 683px) {
-    .noy {
-        right: -26px;
-    }
+@media(max-width: 610px) {
+   .nor {
+       height: 368px;
+   }
+
+   .noy {
+       height: 320px;
+       right: 180px;
+   }
 }
 
 @media(max-width: 600px) {
@@ -422,26 +424,102 @@ background-size: 100% 100%;
     }
 
     .cards .item {
-        width: 100%;
+        width: 96%;
     }
 
     .container3 {
         flex-wrap: wrap;
     }
+}
+
+@media(max-width: 560px){
+.AMAZING .pz {
+    width: 90%;
+}
+}
+
+@media(max-width: 530px) {
+    .content h1 {
+        font-size: 61px;
+    }
 
     .container5 img {
-        left: -44px;
+        bottom: -53px;
     }
+
+    .nor {
+        height: 300px;
+    }
+
+    .noy {
+        height: 240px;
+        right: 149px;
+    }
+
 }
 
 @media(max-width: 500px) {
     .content h1 {
         font-size: 61px;
     }
+
+    .AMAZING .pz {
+        width: 55%;
+    }
+
 }
+
+@media(max-width: 450px) {
+    .container5 img {
+        bottom: -55px;
+    }
+}
+
 
 @media(max-width: 425px) {
     .content h2 {
-        font-size: 36px;
+        font-size: 31px;
+    }
+
+    .content h1 {
+        font-size: 51px;
+    }
+    
+    h3{
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .container5 img {
+        bottom: -107px;
+    }
+
+    .noy {
+        top: 143px;
+        height: 190px;
+        right: 120px;
+    }
+
+    .nor {
+        height: 250px;
+    }
+}
+
+@media(max-width: 350px) {
+    .container5 img {
+        bottom: -140px;
+    }
+
+    .noy {
+        top: 172px;
+        height: 170px;
+        right: 105px;
+    }
+
+    .nor {
+        height: 220px;
     }
 }
