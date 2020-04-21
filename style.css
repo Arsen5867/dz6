@@ -462,11 +462,6 @@ background-size: 100% 100%;
     .content h1 {
         font-size: 61px;
     }
-
-    .AMAZING .pz {
-        width: 55%;
-    }
-
 }
 
 @media(max-width: 450px) {
