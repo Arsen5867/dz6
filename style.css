@@ -174,18 +174,21 @@ button:focus {
     background-image: url(./images/card1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    cursor: pointer;
 }
 
 .card2 {
     background-image: url(./images/card2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    Cursor: grab;
 }
 
 .card3 {
     background-image: url(./images/card3.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    cursor: pointer;
 }
 
 .item:hover div {
@@ -193,6 +196,7 @@ button:focus {
     box-shadow: 10px 10px #95e1d3;
     transition: 0.6s ease-in-out;
     margin-top: -10px;
+
 }
 
 .item:active {
