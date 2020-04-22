@@ -394,7 +394,7 @@ button:focus {
 
 .las:hover a {
     color: rgb(255, 9, 9);
-    background: rgb(255, 94, 0);
+    background: rgb(229, 255, 0);
 }
 
 .las:focus a {
@@ -437,6 +437,10 @@ button:focus {
         font-size: 80px;
     }
 
+    .stars .las {
+        width: 29%;
+    }
+
 }
 
 @media(min-height: 1000px) {
@@ -466,6 +470,22 @@ button:focus {
         max-width: 1200px;
         width: 100%;
     }
+
+    .stars {
+        justify-content: space-between;
+    }
+
+    .stars .las {
+        padding-right: 15px;
+
+    }
+
+    .cards .item {
+        width: 30%;
+        padding-right: 15px;
+    }
+
+
 }
 
 @media(max-width: 860px) {
@@ -486,8 +506,16 @@ button:focus {
 
 @media(max-width: 768px) {
     .cards .item {
-        width: 48%;
+        width: 46%;
         padding-bottom: 20px;
+    }
+
+    .stars .las {
+        width: 46%;
+    }
+
+    .MICHAEL {
+        margin-top: 74px;
     }
 }
 
@@ -513,6 +541,13 @@ button:focus {
 
     .container3 {
         flex-wrap: wrap;
+    }
+
+    .stars .las {
+        width: 96%;
+        padding-right: 0;
+        padding-top: 20px;
+        padding-bottom: 142px;
     }
 }
 
@@ -584,7 +619,7 @@ button:focus {
     }
 
     .container5 img {
-        bottom: -107px;
+        bottom: -121px;
     }
 
     .noy {
@@ -600,7 +635,7 @@ button:focus {
 
 @media(max-width: 350px) {
     .container5 img {
-        bottom: -140px;
+        bottom: -152px;
     }
 
     .noy {
@@ -613,3 +648,5 @@ button:focus {
         height: 220px;
     }
 }
+
+@media(max-width: 350px) {}
