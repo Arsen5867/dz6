@@ -348,80 +348,112 @@ button:focus {
     padding: 19px 23px;
 }
 
-.stars {
-    display: flex;
-    Justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.stars .las {
-    width: 25%;
-    padding-top: 100px;
-    padding-right: 20px;
-
-}
-
-.las a {
-    color: rgba(255, 0, 0, 0);
-}
-
-.MATTHEW {
-    background-image: url(./images/q13.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    text-align: center;
-    height: 100%;
-}
-
-.CHRISTOPHER {
-    background-image: url(./images/q2.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    text-align: center;
-    height: 100%;
-}
-
-.MICHAEL {
-    background-image: url(./images/q1.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    text-align: center;
-    height: 100%;
-}
-
-.las:hover div {
-    color: rgb(255, 255, 255);
-    box-shadow: 10px 10px #95e1d3;
-    transition: 0.6s ease-in-out;
-    background-image: url(./images/q3.png);
-}
-
-.las:hover a {
-    color: rgb(255, 9, 9);
-    background: rgb(229, 255, 0);
-}
-
-.las:focus a {
-    color: rgb(255, 255, 255);
-    background: rgb(255, 94, 0);
-}
-
 .fa-facebook-f {
     content: "\f39e";
-    margin-top: 50%;
 }
 
 .fa-twitter {
     content: "\f099";
-    margin-top: 50%;
 }
 
 .fa-instagram {
     content: "\f16d";
-    margin-top: 50%;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.cards .op {
+    width: 32%;
+}
+
+.cards .op img {
+    max-width: 100%;
+}
+
+.grid_cards {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /*repeat(1fr, 4)*/
+    grid-template-rows: 50% 50%;
+    line-height: 0;
+
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 0px;
+}
+
+.grid_cards .op img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid_cards .op div {
+    height: 0px;
+}
+
+.grid_cards .op:hover div {
+    height: 0px;
+}
+
+.grid_cards .op:nth-child(3) {
+    background-image: url('./images/grid3.png');
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid_cards .op:nth-child(6):hover {
+    background: -webkit-linear-gradient(#FF7673, #f5f788);
+}
+
+.op:hover .met {
+    position: relative;
+    bottom: 150px;
+    text-align: center;
+    height: 100%;
+    color: rgb(252, 252, 252);
+}
+
+.op:hover .met i {
+    font-size: 25pt;
+    padding: 8px;
+    color: rgb(252, 252, 252);
+}
+
+.op:hover .met h6 {
+    font-size: 14px;
+    padding: 16px;
+}
+
+.op:hover .met .p1 {
+    font-size: 15px;
+    font-family: 'Roboto', 'Light Italic';
+}
+
+.op .met i {
+    content: "\f03e";
+    font-size: 0pt;
+}
+
+
+.op .met h6,
+.p1 {
+    font-size: 0px;
+}
 
 @media(max-height: 1300px) {
     .content h1 {
@@ -441,11 +473,6 @@ button:focus {
     .content h1 {
         font-size: 80px;
     }
-
-    .stars .las {
-        width: 29%;
-    }
-
 }
 
 @media(min-height: 1000px) {
@@ -476,21 +503,10 @@ button:focus {
         width: 100%;
     }
 
-    .stars {
-        justify-content: space-between;
-    }
-
-    .stars .las {
-        padding-right: 15px;
-
-    }
-
     .cards .item {
         width: 30%;
         padding-right: 15px;
     }
-
-
 }
 
 @media(max-width: 860px) {
@@ -511,16 +527,26 @@ button:focus {
 
 @media(max-width: 768px) {
     .cards .item {
+        width: 30%;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    .cards .op {
         width: 46%;
         padding-bottom: 20px;
     }
 
-    .stars .las {
-        width: 46%;
+    .grid_cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
-    .MICHAEL {
-        margin-top: 74px;
+    .grid_cards .op:nth-child(3) {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 }
 
@@ -548,12 +574,6 @@ button:focus {
         flex-wrap: wrap;
     }
 
-    .stars .las {
-        width: 96%;
-        padding-right: 0;
-        padding-top: 20px;
-        padding-bottom: 142px;
-    }
 }
 
 @media(max-width: 560px) {
@@ -636,6 +656,14 @@ button:focus {
     .nor {
         height: 250px;
     }
+
+    .grid_cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 7);
+    }
+
+
+
 }
 
 @media(max-width: 350px) {
