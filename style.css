@@ -235,7 +235,7 @@ button:focus {
     margin: 0 auto;
 }
 
-.con {
+.list {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
@@ -248,11 +248,25 @@ button:focus {
     font-size: 75px;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 1.5% 0%;
+    padding: 1.5% 3%;
+    border-right-color: #ffffff;
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-left-color: #ffffff;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.blu_24 {
+    border-right-width: 1px;
 }
 
 .blu p {
     font-size: 14px;
+}
+
+.blu h5 {
+    font-size: 86%;
 }
 
 .AMAZING {
@@ -659,6 +673,13 @@ fa-image {
     }
 }
 
+@media(max-width: 1064px) {
+    .blu {
+        border-right-width: 1px;
+    }
+
+}
+
 @media(max-width: 1024px) {
     .center {
         width: 100%;
@@ -789,7 +810,7 @@ fa-image {
         flex-wrap: wrap;
     }
 
-    .con .blu {
+    .list .blu {
         width: 31%;
     }
 
