@@ -584,7 +584,7 @@ fa-image {
 }
 
 .container9 .hipster {
-    height: 9em;
+    max-width: 100%;
 }
 
 .dark_grey {
@@ -658,8 +658,7 @@ fa-image {
     }
 
     .container9 .hipster {
-        height: 4em;
-        padding: 0% 4%;
+        height: 7em;
     }
 
     .fa-chevron-down {
@@ -708,6 +707,7 @@ fa-image {
         padding-left: 29%;
     }
 }
+
 
 
 @media(max-width: 860px) {
@@ -772,11 +772,6 @@ fa-image {
         grid-column: 1/2;
     }
 
-    .container9 .hipster {
-        height: 5em;
-        padding: 0.5% 7%;
-    }
-
     .container6 .torments {
         padding-top: 10px;
     }
@@ -818,8 +813,8 @@ fa-image {
 
 @media(max-width: 575px) {
     .container9 .hipster {
-        height: 5em;
-        padding: 1.5% 14%;
+        height: 6em;
+        padding: 0 8%;
     }
 }
 
@@ -943,6 +938,12 @@ fa-image {
     .fa-chevron-down {
         padding-left: 35%;
     }
+
+    .container9 .hipster {
+        height: 6em;
+        padding: 0px 3%;
+    }
+
 }
 
 
