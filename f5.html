@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> &#9787; &#9734; &#9731; MoGo</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="./css/animate.css">
+    </head>
+
+
 <body>
     <div class="wrapper">
         <section class="container1">
@@ -90,7 +93,7 @@
             </div>
         </section>
         <section class="container4">
-           <div class="text ">
+           <div class="text">
                 <h4>We work with</h4>
                 <h3>AMAZING SERVICES</h3>
                 <p class="red">________</p>
@@ -154,8 +157,9 @@
             </div>
         </section>
         <section class="container5">
-            <h4>We work with</h4>
-            <h3>AMAZING SERVICES</h3>
+            <h4>For all devices</h4>
+            <p class="anime"></p>
+            <h3>UNIQUE DESIGN</h3>
             <p class="red">________</p>
             <img src="./images/ggtel.png" alt="tel" class="nor">
             <img src="./images/tel.png" alt="tel" class="noy">
@@ -233,18 +237,77 @@
             </div>
         </section>
         <section class="container7">
-            <div class="bloc">
-                <div class="all"><a href="#"></a>&#60;</div> 
-                <div>
-                            <i class="fas fa-comments"></i>
+            <div id="carousel" class="carousel slide d-inline-block" data-ride="carousel">
+                <!-- Индикаторы -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="1" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-fluid iim" src="./images/Rectangle10.png" alt="...">
+                        <div class="carousel-caption">
+                            <div class="bloc">
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="ppp">
+                                    <p class="grey ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    </p>
+                                    <span class="red">&#8212;&#8212;&ndash;</span>
+                                    <nobr class="name_comments">Noah King</nobr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid iim" src="./images/Rectangle10.png" alt="...">
+                        <div class="carousel-caption">
+                            <div class="bloc">
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="ppp">
+                                    <p class="grey ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    </p>
+                                    <span class="red">&#8212;&#8212;&ndash;</span>
+                                    <nobr class="name_comments">Liam Hill</nobr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid iim" src="./images/Rectangle10.png" alt="...">
+                        <div class="carousel-caption">
+                            <div class="bloc">
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="ppp">
+                                    <p class="grey ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    </p>
+                                    <span class="red">&#8212;&#8212;&ndash;</span>
+                                    <nobr class="name_comments">Jon Doe</nobr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ppp">
-                        <p class="grey ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                        </p>
-                        <span class="red">~~~~</span><nobr>Jon Doe</nobr>
-                </div>
-                <div class="all"><a href="#"></a>&#62;</div>
+                <!-- Элементы управления -->
+                <!-- закраска не реботает так как это встроеный в бутстрап рисунок -->
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon dark" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon dark" aria-hidden="true"></span>
+                </a>
             </div>
         </section>
         <section class="container8">
@@ -258,38 +321,58 @@
                     consequat.
                 </p>
             </div>
-            <div class="stars">
-                    <div class="las ">
-                        <div class="MATTHEW">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <h4>MATTHEW DIX</h4>
-                        <p class="grey">Graphic Design</p>
+        <div class="container-fluid center">
+            <div class="row justify-content-between">
+                <div class="card">
+                    <div class="pic">  
+                        <img src="./images/q13.png">
+                            <div class="MATTHEW">
+                                <p class="emptiness"></p>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
                     </div>
-                <div class="las ">
-                    <div class="CHRISTOPHER">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="text">
+                        <h5 class="wow wobble" data-wow-duration="3s">Matthew Dix</h5>
+                        <p class="wow bounceOut" data-wow-iteration="5">Graphic Design</p>
                     </div>
-                    <h4>CHRISTOPHER CAMPBELL</h4>
-                    <p class="grey">Branding/UX design</p>
                 </div>
-                    <div class="las ">
+                <div class="card">
+                    <div class="pic">
+                        <img src="./images/q2.png">
+                            <div class="CHRISTOPHER">
+                                <p class="emptiness"></p>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                    </div>
+                    <div class="text">
+                        <h5>CHRISTOPHER CAMPBELL</h5>
+                        <p>Branding/UX design</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="pic">
+                    <img src="./images/q1.png">
                         <div class="MICHAEL">
+                            <p class="emptiness"></p>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <h4>MICHAEL FERTIG</h4>
-                        <p class="grey">Developer</p>
                     </div>
+                    <div class="text">
+                        <h5>MICHAEL FERTIG</h5>
+                        <p>Developer</p>
+                    </div>
+                </div>
             </div>
+        </div>
         </section>
         <section class="container9 dark_grey">
             <div class="container">
@@ -439,9 +522,159 @@
                     </div>
             </div>
         </section>
-        <section class="container13"></section>
-        <section class="container14"></section>
-        <section class="container15"></section>
+        <section class="container13">
+            <div class="text ">
+                <h4>Our stories</h4>
+                <h3>LATEST BLOG</h3>
+                <p class="red">________</p>
+            </div>
+            <div class="Job_cg">
+                <div class="Job">
+                    <div class="Job54">
+                        <img src="./images/Layer54.png">
+                        <div class="Job_blu">
+                            <p>15</p>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                    <div>
+                            <h6>LOREM IPSUM DOLOR SIT AMET</h6>
+                            <p class="gray">
+                                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna allqua.
+                            </p>
+                    </div>
+                    <div class="magic bot">
+                        <i class="fas fa-eye"><strong class="gray">542</strong></i>
+                        <i class="fas fa-comment-dots"><strong class="gray">17</strong></i>
+                    </div>
+                </div>
+                <div class="Job">
+                    <div class="Job54">
+                        <img src="./images/Layer55.png">
+                        <div class="Job_blu">
+                            <p>14</p>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>SED DO EIUSMOD TEMPOR</h6>
+                        <p class="gray">
+                            Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna allqua.
+                        </p>
+                    </div>
+                    <div class="magic bot">
+                        <i class="fas fa-eye"><strong class="gray">992</strong></i>
+                        <i class="fas fa-comment-dots"><strong class="gray">42</strong></i>
+                    </div>
+                </div>
+                <div class="Job">
+                    <div class="Job54">
+                        <img src="./images/Layer57.png">
+                        <div class="Job_blu">
+                            <p>12</p>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>INCIDIDUNT UT LABORE ET DOLORE</h6>
+                        <p class="gray">
+                            Elit, sed do eiusmod tempor incididunt ut labore et dolore magna allqua.
+                        </p>
+                    </div>
+                    <div class="magic bot">
+                        <i class="fas fa-eye"><strong class="gray">1560</strong></i>
+                        <i class="fas fa-comment-dots"><strong class="gray">98</strong></i>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="container14">
+                <!--карта-->
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44780.18483534914!2d27.51404186399856!3d53.85231561716824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1588334210001!5m2!1sru!2sby"
+                    width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+                <div class="red">
+                    <i class="fas fa-map-marker-alt"></i>   
+                    <h3>MEET OUR TEAM</h3>
+                    <p>________</p>
+                </div>
+            </div>
+        </section>
+        <section class="container15">
+            <div class="MoGo_glo">
+                <div class="MoGo MoGo_MoGo">
+                    <h2>MoGo</h2>
+                    <p class="gray gray_m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p><strong>15k</strong> followers</p>
+                    <p class="bot">Follow Us:
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                        <a href="#"><i class="fab fa-tumblr"></i></a>
+                    </p>
+                    <div>
+                        <input class="button_tex" tabindex="1" placeholder="Your Email ..." type="text" name="login" value="" />
+                        <button type="submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <div class="MoGo MoGo_BLOGS">
+                    <h6 class="a6">BLOGS</h6>
+                        <div class="BLOGS">
+                            <div><img src="./images/BLOGS1.png" alt="BLOGS"></div>
+                            <div class="BLOGS_x">
+                                <h6>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing</h6>
+                                <p class="gray gray_m Jan9">Jan9,2016</p>
+                            </div>
+                        </div>
+                        <div class="BLOGS">
+                            <div><img src="./images/BLOGS2.png" alt="BLOGS"></div>
+                            <div class="BLOGS_x">
+                                <h6>Consectetur adipiscing elit,
+                                sed do eiusmod tempor</h6>
+                                <p class="gray gray_m Jan9">Jan9,2016</p>
+                            </div>
+                        </div>
+                        <div class="BLOGS">
+                            <div><img src="./images/BLOGS3.png" alt="BLOGS"></div>
+                            <div class="BLOGS_x">
+                                <h6>sed do eiusmod tempor
+                                incididunt ut labore</h6>
+                                <p class="gray gray_m Jan9">Jan9,2016</p>
+                            </div>
+                        </div>
+                        
+                </div>
+                <div class="MoGo MoGo_INSTAGRAM">
+                    <h6  class="a6 aa6">INSTAGRAM</h6>
+                    <div class="INSTAGRAM_top">  
+                            <img src="./images/INSTAGRAM1.png" alt="INSTAGRAM">
+                            <img src="./images/INSTAGRAM2.png" alt="INSTAGRAM">
+                            <img src="./images/INSTAGRAM3.png" alt="INSTAGRAM">
+                            <img src="./images/INSTAGRAM4.png" alt="INSTAGRAM">
+                            <img src="./images/INSTAGRAM5.png" alt="INSTAGRAM">
+                            <img src="./images/INSTAGRAM6.png" alt="INSTAGRAM">
+                            <img src="./images/INSTAGRAM7.png" alt="INSTAGRAM">
+                            <img src="./images/INSTAGRAM8.png" alt="INSTAGRAM">
+                            <img src="./images/INSTAGRAM9.png" alt="INSTAGRAM">
+                    </div>
+                    <p class="View">View more phot</p>
+                </div>
+            </div>
+            <div class="MoGo_by bot">
+                <p>© 2018  MoGo template by <span class="red">Laaqiq</span></p>
+            </div>
+            
+        </section>
     </div>
 
 
@@ -454,5 +687,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

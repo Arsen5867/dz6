@@ -209,12 +209,6 @@ button:focus {
 
 }
 
-.item:active {
-    background: #95e1d3;
-    box-shadow: 10px 10px #95e1d300;
-    transition: 0.6s ease-in-out;
-}
-
 .rad a {
     color: rgba(255, 0, 0, 0);
 }
@@ -412,8 +406,28 @@ button:focus {
     margin-bottom: 10px;
 }
 
-.container7 {
-    background-color: rgb(230, 223, 223);
+.container7 .iim {
+    width: 100%;
+    height: 14em;
+}
+
+.container7 .ppp {
+    text-align: left;
+}
+
+.container7 .ppp .name_comments {
+    font-weight: 400;
+    font-family: 'Kaushan Script',
+        cursive;
+    color: rgb(0, 0, 0);
+}
+
+.fa-comments {
+    content: "\f086";
+    color: #43a9ff;
+    padding: 20px;
+    border: 1px double #43a9ff;
+    font-size: 37pt;
 }
 
 .bloc {
@@ -544,6 +558,105 @@ button:focus {
     background-position-x: 50%;
 }
 
+.container8 .card {
+    width: 32%;
+    border: 0;
+}
+
+.container8 .card img {
+    max-width: 100%;
+}
+
+.container8 .card:nth-child(2) {
+    margin: 0 2%;
+}
+
+.container8 .card .text h5 {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.container8 .card .text p {
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: italic;
+    color: #3f3f3f;
+}
+
+.container8 .card .text h5 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.container8 .card .text p {
+    text-align: center;
+}
+
+.container8 .pic {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.pic:hover .MATTHEW {
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.container8 a:hover i {
+    color: #ffffff;
+    background-color: #f38181;
+    padding: 5.5%;
+}
+
+.container8 .pic:hover .CHRISTOPHER {
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.pic:hover .MICHAEL {
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.MATTHEW,
+.CHRISTOPHER,
+.MICHAEL {
+    cursor: default;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(245, 64, 88, 0.8), rgba(248, 246, 98, 0.8));
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+}
+
+.container8 .emptiness {
+    margin-top: 60%;
+}
+
+.container8 a {
+    margin-top: 200px;
+    text-decoration: none;
+    padding: 5%;
+    margin: 0 -0.5%;
+    color: #f38181;
+    background-color: #fce38a;
+}
+
+.card:hover div:nth-child(1) {
+    box-shadow: 9px 10px #95e1d3;
+    transition: 0.6s ease-in-out;
+    margin-top: -10px;
+    background: linear-gradient(rgba(245, 64, 88, 0.8), rgba(248, 246, 98, 0.8));
+}
 
 .op .met {
     text-align: center;
@@ -592,7 +705,7 @@ fa-image {
 }
 
 .container9 {
-    background-color: rgb(230, 223, 223);
+    background-color: rgba(235, 235, 235, 0.5);
 }
 
 .container12 {
@@ -638,6 +751,263 @@ fa-image {
     margin-bottom: 50px;
 }
 
+.container13 .Job {
+    width: 32%;
+    text-align: left;
+    position: relative;
+    padding: 0 1% 5% 1%;
+}
+
+.container13 .Job .Job_blu {
+    background-color: #43a9ff;
+    width: 70px;
+    text-align: center;
+    position: absolute;
+    bottom: 52%;
+    left: 1%;
+}
+
+.container13 .Job .Job_blu p:nth-child(1) {
+    font-size: 30px;
+    margin-bottom: 0rem;
+    color: rgb(255, 255, 255);
+}
+
+.container13 .Job .Job_blu p:nth-child(2) {
+    color: rgb(255, 255, 255);
+}
+
+.container13 .Job h6 {
+    font-size: 14px;
+    padding-top: 5%;
+    font-weight: 600;
+}
+
+.container13 .magic {
+    color: #43a9ff;
+    padding-top: 15px;
+}
+
+.container13 .magic .fa-comment-dots {
+    padding-left: 20px;
+}
+
+.container13 .magic .gray {
+    padding-left: 10px;
+}
+
+.container13 .Job_cg {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gray {
+    color: #cccccc;
+    font-size: 15px;
+}
+
+.bot {
+    border-top-color: #cccccc;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.container13 .Job img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.container14 {
+    position: relative;
+    width: 100%;
+}
+
+.container14 .red {
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(235, 235, 235, 0.74);
+    padding: 26.5px 0;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    top: 0;
+}
+
+.container14:hover .red {
+    display: none;
+}
+
+.fa-map-marker-alt {
+    content: "\f3c5";
+    font-size: 25pt;
+}
+
+.container15 {
+    background-color: rgba(235, 235, 235, 0.5);
+}
+
+.container15 .MoGo_by {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container15 .MoGo h2 {
+    font-weight: 700;
+    font-size: 55px;
+    color: rgb(187, 187, 187);
+}
+
+.container15 .MoGo h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.container15 .MoGo_glo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5% 3%;
+}
+
+.container15 .MoGo_MoGo {
+    width: 38%;
+}
+
+.container15 .MoGo_BLOGS {
+    width: 30%;
+}
+
+.container15 .MoGo_INSTAGRAM {
+    width: 29%;
+}
+
+.container15 .map {
+    margin: 0.7% 0;
+}
+
+.container15 .BLOGS {
+    display: flex;
+}
+
+.container15 button {
+    color: #ffffff;
+    background-color: #43a9ff;
+    font-size: 20px;
+    padding: 10px 5px;
+    border: 1px double rgb(250, 250, 250);
+    cursor: pointer;
+    height: 40px;
+    padding-top: 3px;
+}
+
+.INSTAGRAM_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.INSTAGRAM_top img {
+    width: 100%;
+    max-width: 100%;
+    padding: 2px;
+}
+
+
+.container15 button:hover {
+    background-color: #f4c83679;
+    color: white;
+}
+
+.container15 button:focus {
+    background-color: rgb(238, 170, 232);
+}
+
+.container15 .MoGo .gray_m {
+    margin: 5% 0;
+}
+
+.container15 .MoGo .bot {
+    padding-top: 20px;
+    font-style: italic;
+    color: rgb(187, 187, 187);
+}
+
+.container15 .MoGo a {
+    color: #43a9ff;
+    font-size: 17pt;
+}
+
+.container15 .MoGo .BLOGS_x {
+    padding-left: 20px;
+}
+
+.a6 {
+    padding-bottom: 13%;
+}
+
+.Jan9 {
+    font-style: italic;
+}
+
+.View {
+    padding-top: 5%;
+}
+
+.container15 .MoGo .button_tex {
+    font-size: 18px;
+    height: 38px;
+}
+
+
+.anime {
+    width: 2%;
+    height: 10px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+        margin-left: 0%;
+        border-radius: 50px 0 0 50px;
+        width: 2%;
+    }
+
+    25% {
+        background-color: rgb(255, 208, 0);
+        margin-left: 25%;
+        border-radius: 40px 10px;
+    }
+
+    50% {
+        background-color: rgb(17, 0, 255);
+        margin-left: 50%;
+        border-radius: 13em/3em;
+        width: 20%;
+    }
+
+    75% {
+        background-color: rgb(174, 0, 255);
+        margin-left: 75%;
+        border-radius: 13em 0.5em/1em 0.5em;
+    }
+
+    100% {
+        background-color: rgb(234, 0, 255);
+        margin-left: 100%;
+        border-radius: 8px;
+        width: 2%;
+    }
+}
+
+
+
+
 @media(max-height: 1300px) {
     .content h1 {
         font-size: 120px;
@@ -672,12 +1042,50 @@ fa-image {
     }
 }
 
+@media(max-width: 1100px) {
+
+    .container13 .Job .Job_blu {
+        bottom: 58%;
+    }
+
+}
+
 @media(max-width: 1064px) {
     .blu {
         border-right-width: 1px;
     }
 
+    .container13 .Job .Job_blu p:nth-child(2) {
+        margin-bottom: 0;
+    }
+
 }
+
+@media(max-width: 1040px) {
+    .container15 .MoGo_MoGo {
+        width: 55%;
+    }
+
+    .container15 .MoGo_BLOGS {
+        width: 40%;
+    }
+
+    .container15 .MoGo_INSTAGRAM {
+        width: 100%;
+    }
+
+    .INSTAGRAM_top {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .aa6 {
+        padding: 4% 0;
+    }
+
+
+}
+
 
 @media(max-width: 1024px) {
     .center {
@@ -700,6 +1108,14 @@ fa-image {
         width: 30%;
         padding-right: 15px;
     }
+
+    .container8 .card {
+        padding: 0 2%;
+    }
+
+    .container13 .Job .Job_blu {
+        bottom: 62%;
+    }
 }
 
 @media(max-width: 993px) {
@@ -707,8 +1123,6 @@ fa-image {
         padding-left: 29%;
     }
 }
-
-
 
 @media(max-width: 860px) {
     .content h2 {
@@ -727,6 +1141,12 @@ fa-image {
 
     .nor {
         height: 430px;
+    }
+}
+
+@media(max-width: 832px) {
+    .container13 .Job .Job_blu {
+        bottom: 66%;
     }
 }
 
@@ -781,6 +1201,48 @@ fa-image {
     }
 }
 
+@media(max-width: 756px) {
+    .container7 .iim {
+
+        height: 17em;
+    }
+}
+
+@media(max-width: 720px) {
+    .INSTAGRAM_top {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .container15 .MoGo_MoGo {
+        width: 100%;
+    }
+
+    .container15 .MoGo_BLOGS {
+        width: 50%;
+    }
+
+    .container15 .MoGo_INSTAGRAM {
+        width: 50%;
+    }
+
+    .aa6 {
+        padding: 0;
+    }
+
+    .a6 {
+        padding: 4% 0;
+    }
+}
+
+@media(max-width: 680px) {
+    .container13 .Job .Job_blu {
+        width: 50px;
+        bottom: 70%;
+    }
+
+}
+
 @media(max-width: 610px) {
     .nor {
         height: 368px;
@@ -790,6 +1252,7 @@ fa-image {
         height: 320px;
         right: 180px;
     }
+
 }
 
 @media(max-width: 600px) {
@@ -809,6 +1272,41 @@ fa-image {
         width: 31%;
     }
 
+    .container8 .card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container8 img {
+        width: 100%;
+    }
+
+    .container8 a {
+        margin: 0%;
+    }
+
+    .container13 .Job .Job_blu {
+        width: 70px;
+        bottom: 52%;
+    }
+
+    .container13 .Job {
+        width: 96%;
+        padding: 0 0% 10% 4%;
+    }
+
+    .container15 .MoGo_MoGo {
+        width: 100%;
+    }
+
+    .container15 .MoGo_BLOGS {
+        width: 100%;
+    }
+
+    .container15 .MoGo_INSTAGRAM {
+        width: 100%;
+    }
+
 }
 
 @media(max-width: 575px) {
@@ -824,7 +1322,7 @@ fa-image {
     }
 
     .container5 img {
-        bottom: -29px;
+        bottom: 0px;
     }
 
     .nor {
@@ -869,10 +1367,13 @@ fa-image {
     }
 }
 
-@media(max-width: 450px) {
-    .container5 img {
-        bottom: -34px;
+@media(max-width: 480px) {
+
+    .container7 .iim {
+
+        height: 20em;
     }
+
 }
 
 
@@ -894,7 +1395,7 @@ fa-image {
     }
 
     .container5 img {
-        bottom: -83px;
+        bottom: -61px;
     }
 
     .noy {
@@ -944,12 +1445,20 @@ fa-image {
         padding: 0px 3%;
     }
 
+    .container7 .iim {
+
+        height: 25em;
+    }
+
+    .container15 .MoGo .button_tex {
+        font-size: 13px;
+    }
 }
 
 
 @media(max-width: 350px) {
     .container5 img {
-        bottom: -117px;
+        bottom: -95px;
     }
 
     .noy {
@@ -961,10 +1470,22 @@ fa-image {
     .nor {
         height: 220px;
     }
+
+    .container7 .iim {
+
+        height: 28em;
+    }
 }
 
 @media(max-width: 345px) {
     .fa-chevron-down {
         padding-left: 29%;
+    }
+}
+
+@media(max-width: 329px) {
+    .container7 .iim {
+
+        height: 30em;
     }
 }
