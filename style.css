@@ -61,23 +61,47 @@ h4 {
     text-align: center;
 }
 
+.container1 .owl-dots {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    padding: 0 2%;
+}
+
+.container1 .owl-dots button {
+    display: block;
+    width: 10%;
+    height: 9px;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+
 .container1 {
-    background-image: url('./images/arel.png');
+    background-image: url('./images/layer.png');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 1000px;
     min-height: 568px;
     background-position-x: 50%;
+    position: relative;
 }
 
-.container1:hover {
-    background-image: url('./images/layer.png');
+.bgc2 {
+    background-image: url('./images/d.png');
+}
+
+.bgc3 {
+    background-image: url('./images/o116.jpg');
+}
+
+.bgc4 {
+    background-image: url('./images/o1.jpg');
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .menu {
@@ -411,7 +435,8 @@ button:focus {
     height: 14em;
 }
 
-.container7 .ppp {
+.container7 .ppp,
+.container11 .ppp {
     text-align: left;
 }
 
@@ -708,6 +733,18 @@ fa-image {
     background-color: rgba(235, 235, 235, 0.5);
 }
 
+.container11 .smf {
+    width: 170px;
+}
+
+.container11 .iim {
+    height: 100%;
+}
+
+.container11 .ppp .name_comments {
+    color: grey;
+}
+
 .container12 {
     background-image: url('./images/container12.png');
     background-repeat: no-repeat;
@@ -999,7 +1036,7 @@ fa-image {
 
     100% {
         background-color: rgb(234, 0, 255);
-        margin-left: 100%;
+        margin-left: 90%;
         border-radius: 8px;
         width: 2%;
     }
@@ -1007,11 +1044,34 @@ fa-image {
 
 
 
+@media(max-width: 2000px) {
+    .container1 .owl-dots {
+        margin-top: 6%;
+    }
+
+}
+
+
+
+@media (max-width: 1350px) {
+    .container1 .owl-dots {
+        margin-top: 150px;
+    }
+}
 
 @media(max-height: 1300px) {
     .content h1 {
         font-size: 120px;
     }
+}
+
+@media(min-width: 1200px) {
+
+    .INSTAGRAM_top {
+        grid-template-columns: 107px 107px 107px;
+        grid-template-rows: 107px 107px 107px;
+    }
+
 }
 
 @media(max-height: 1200px) {
@@ -1116,6 +1176,50 @@ fa-image {
     .container13 .Job .Job_blu {
         bottom: 62%;
     }
+
+    .burger {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    
+    .burger i {
+        display: block;
+        width: 80%;
+        height: 5px;
+        margin: 3px;
+        background-color: rgb(255, 0, 0);
+    }
+
+    .show {
+        display: block;
+    }
+
+    .container1 .owl-dots {
+        margin-top: 20px;
+    }
+
+    .menu ul {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .menu ul li {
+        padding: 2% 2%;
+        cursor: pointer;
+        width: 25%;
+    }
+
+    .show {
+        width: 80%;
+        background: rgba(0, 0, 0, 0.479);
+    }
 }
 
 @media(max-width: 993px) {
@@ -1202,6 +1306,7 @@ fa-image {
 }
 
 @media(max-width: 756px) {
+
     .container7 .iim {
 
         height: 17em;
@@ -1307,6 +1412,10 @@ fa-image {
         width: 100%;
     }
 
+    .container11 .iim {
+        height: 21em;
+    }
+
 }
 
 @media(max-width: 575px) {
@@ -1365,6 +1474,10 @@ fa-image {
     .fa-chevron-down {
         padding-left: 45%;
     }
+
+    .container11 .iim {
+        height: 27em;
+    }
 }
 
 @media(max-width: 480px) {
@@ -1376,6 +1489,20 @@ fa-image {
 
 }
 
+@media(max-width: 440px) {
+    .container11 .smf {
+        width: 136px;
+
+    }
+
+    .container11 .i_o_p {
+        flex-wrap: wrap;
+    }
+
+    .container11 .grey {
+        margin-top: 3%;
+    }
+}
 
 @media(max-width: 425px) {
     .content h2 {
@@ -1453,6 +1580,12 @@ fa-image {
     .container15 .MoGo .button_tex {
         font-size: 13px;
     }
+
+    .menu ul li {
+        padding: 2% 2%;
+        cursor: pointer;
+        width: 30%;
+    }
 }
 
 
@@ -1484,6 +1617,7 @@ fa-image {
 }
 
 @media(max-width: 329px) {
+
     .container7 .iim {
 
         height: 30em;
